@@ -59,7 +59,7 @@ impl fmt::Display for TunerUi {
             f.write_str(bar)?;
         };
 
-        write!(f, " {cents}")?;
+        write!(f, " {cents:3.0} cents")?;
 
         Ok(())
     }
